@@ -25,7 +25,7 @@ const Resume = () => {
               </div>
               <hr className="my-5" />
               <div>
-                <p>
+                <p className="text-lg">
                   Hi there! My name is Sourave Halder and I am a React developer
                   with expertise in JavaScript and front-end development.
                   Skilled in building scalable web applications using React.js
@@ -34,7 +34,9 @@ const Resume = () => {
                 </p>
               </div>
             </div>
-            <div></div>
+            <div>
+              
+            </div>
             <div></div>
           </div>
         </div>
