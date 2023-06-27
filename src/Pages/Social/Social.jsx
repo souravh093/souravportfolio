@@ -30,6 +30,7 @@ const Social = () => {
             <FaGithub /> Github
           </div>
         </Link>
+
         <Link
           style={styles.darkButton}
           onMouseEnter={(e) =>
@@ -44,6 +45,7 @@ const Social = () => {
             <FaLinkedin /> Linkedin
           </div>
         </Link>
+
         <Link
           style={styles.darkButton}
           onMouseEnter={(e) =>
@@ -58,6 +60,7 @@ const Social = () => {
             <FaTwitter /> Twitter
           </div>
         </Link>
+        
         <Link
           style={styles.darkButton}
           onMouseEnter={(e) =>
