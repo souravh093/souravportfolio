@@ -43,7 +43,7 @@ const Social = () => {
   }, [controls]);
   return (
     <Container>
-      <motion.dev
+      <motion.div
         initial={{ x: -200, opacity: 0 }}
         animate={controls}
         transition={{ duration: 0.5 }}
@@ -61,7 +61,7 @@ const Social = () => {
           }
           className="w-full bg-[#0A1429] border flex items-center justify-center text-2xl py-6 font-bold border-gray-800 rounded-md cursor-pointer hover:shadow-md"
         >
-          <Link to="/contact" className=" flex items-center gap-2">
+          <Link to="https://github.com/souravh093" target="_blank" className=" flex items-center gap-2">
             <FaGithub /> Github
           </Link>
         </motion.div>
@@ -77,9 +77,9 @@ const Social = () => {
           }
           className="w-full bg-[#0A1429] border flex items-center justify-center text-2xl py-6 font-bold border-gray-800 rounded-md cursor-pointer hover:shadow-md"
         >
-          <div className=" flex items-center gap-2">
+          <Link to="https://www.linkedin.com/in/sourave-halder-86a360178/" target="_blank" className=" flex items-center gap-2">
             <FaLinkedin /> Linkedin
-          </div>
+          </Link>
         </motion.div>
 
         <motion.div
@@ -93,9 +93,9 @@ const Social = () => {
           }
           className="w-full bg-[#0A1429] border flex items-center justify-center text-2xl py-6 font-bold border-gray-800 rounded-md cursor-pointer hover:shadow-md"
         >
-          <div className=" flex items-center gap-2">
+          <Link to="https://twitter.com/SouraveWeb" target="_blank" className=" flex items-center gap-2">
             <FaTwitter /> Twitter
-          </div>
+          </Link>
         </motion.div>
 
         <motion.div
@@ -109,11 +109,11 @@ const Social = () => {
           }
           className="w-full bg-[#0A1429] border flex items-center justify-center text-2xl py-6 font-bold border-gray-800 rounded-md cursor-pointer hover:shadow-md"
         >
-          <div className=" flex items-center gap-2">
+          <Link to="https://www.facebook.com/profile.php?id=100012269386584" target="_blank" className=" flex items-center gap-2">
             <FaFacebookF /> Facebook
-          </div>
+          </Link>
         </motion.div>
-      </motion.dev>
+      </motion.div>
     </Container>
   );
 };

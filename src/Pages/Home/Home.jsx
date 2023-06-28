@@ -4,6 +4,8 @@ import Social from "../Social/Social";
 import Services from "./Services/Services";
 import Resume from "./Resume/Resume";
 import Projects from "../../components/Projects/Projects";
+import Cv from "./Cv/Cv";
+import Contact from "./Contact/Contact";
 const Home = () => {
   return (
     <>
@@ -12,6 +14,8 @@ const Home = () => {
       <Services />
       <Resume />
       <Projects />
+      <Cv />
+      <Contact />
     </>
   );
 };

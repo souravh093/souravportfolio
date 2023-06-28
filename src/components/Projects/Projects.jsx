@@ -4,6 +4,9 @@ import { motion, useAnimation } from "framer-motion";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
+import { FaGithub } from "react-icons/fa";
+import { BsBoxArrowInUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projectRef = useRef(null);
@@ -54,9 +57,12 @@ const Projects = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 mt-24 gap-10">
-            <div className="bg-[#091530] p-10 rounded-xl">
-              <div className="w-full h-[300px] mb-5">
+          <div className="grid grid-cols-3 mt-10 gap-10">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="bg-[#091530] p-5 rounded-xl border border-gray-700"
+            >
+              <div className="w-full h-[250px] mb-5">
                 <img
                   className="w-full h-full object-cover rounded-xl object-top transition-all duration-1000 ease-in-out hover:object-bottom"
                   src={project1}
@@ -64,36 +70,105 @@ const Projects = () => {
                 />
               </div>
               <div className="text-gray-200">
-                <h2 className="text-4xl font-bold mb-3">MusicMaestro</h2>
-                <p className="text-lg">
+                <h2 className="text-3xl font-bold mb-3">MusicMaestro</h2>
+                <p className="text-gray-300">
                   The Music Summer Camp School MERN website is a
                   mobile-responsive platform with dark mode, role management,
                   authentication and authorization using Firebase and JWT, and
                   visually appealing animations. Students can easily enroll in
                   classes and make payments securely.
                 </p>
+                <div className="mt-5">
+                  <div className="flex justify-between gap-5">
+                    <div className="flex items-center gap-2">
+                      <Link to="https://github.com/souravh093/musicmestro-client" target="_blank"  className="flex items-center gap-2">
+                        Client <FaGithub />
+                      </Link>{" "}
+                      <Link to="https://github.com/souravh093/musicmestro-server" target="_blank" className="flex items-center gap-2">
+                        Server <FaGithub />
+                      </Link>
+                    </div>
+                    <Link to="https://github.com/souravh093/musicmestro-client" target="_blank" className="flex items-center gap-2">
+                      Live Demo <BsBoxArrowInUpRight />
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="w-full h-[300px]">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="bg-[#091530] p-5 rounded-xl border border-gray-700"
+            >
+              <div className="w-full h-[250px] mb-5">
                 <img
-                  className="w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:object-bottom"
+                  className="w-full h-full object-cover rounded-xl object-top transition-all duration-1000 ease-in-out hover:object-bottom"
                   src={project2}
                   alt="project 2"
                 />
               </div>
-              <div></div>
-            </div>
-            <div>
-              <div className="w-full h-[300px]">
+              <div className="text-gray-200">
+                <h2 className="text-3xl font-bold mb-3">Toy Tree</h2>
+                <p className="text-gray-300">
+                  The Music Summer Camp School MERN website is a
+                  mobile-responsive platform with dark mode, role management,
+                  authentication and authorization using Firebase and JWT, and
+                  visually appealing animations. Students can easily enroll in
+                  classes and make payments securely.
+                </p>
+                <div className="mt-5">
+                  <div className="flex justify-between gap-5">
+                    <div className="flex items-center gap-2">
+                      <Link to="https://github.com/souravh093/toy-tree-client" target="_blank" className="flex items-center gap-2">
+                        Client <FaGithub />
+                      </Link>{" "}
+                      <Link to="https://github.com/souravh093/toy-tree-server" target="_blank" className="flex items-center gap-2">
+                        Server <FaGithub />
+                      </Link>
+                    </div>
+                    <Link to="https://toy-tree.web.app/" target="_blank" className="flex items-center gap-2">
+                      Live Demo <BsBoxArrowInUpRight />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="bg-[#091530] p-5 rounded-xl border border-gray-700"
+            >
+              <div className="w-full h-[250px] mb-5">
                 <img
-                  className="w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:object-bottom"
+                  className="w-full h-full object-cover rounded-xl object-top transition-all duration-1000 ease-in-out hover:object-bottom"
                   src={project3}
                   alt="project 3"
                 />
               </div>
-              <div></div>
-            </div>
+              <div className="text-gray-200">
+                <h2 className="text-3xl font-bold mb-3">Shape Route</h2>
+                <p className="text-gray-300">
+                  The Music Summer Camp School MERN website is a
+                  mobile-responsive platform with dark mode, role management,
+                  authentication and authorization using Firebase and JWT, and
+                  visually appealing animations. Students can easily enroll in
+                  classes and make payments securely.
+                </p>
+                <div className="mt-5">
+                  <div className="flex justify-between gap-5">
+                    <div className="flex items-center gap-2">
+                      <Link to="https://github.com/souravh093/assingnment-10-client" target="_blank" className="flex items-center gap-2">
+                        Client <FaGithub />
+                      </Link>{" "}
+                      <Link to="https://github.com/souravh093/assignment-10-server" className="flex items-center gap-2">
+                        Server <FaGithub />
+                      </Link>
+                    </div>
+                    <Link to="https://chip-recipe-client.web.app/" target="_blank" className="flex items-center gap-2">
+                      Live Demo <BsBoxArrowInUpRight />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </Container>

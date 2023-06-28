@@ -10,6 +10,15 @@ const Banner = () => {
   const bannerContainerStyle = {
     backgroundImage: `url(${bannerImage})`,
   };
+
+  const handleDownload = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/souraveresume .pdf";
+    downloadLink.download = "souraveresume .pdf"; 
+    downloadLink.click();
+  };
+
+
   return (
     <div style={bannerContainerStyle}>
       <Container>
@@ -26,7 +35,7 @@ const Banner = () => {
               Unleashing the full potential of the web with React: Crafting
               captivating and cutting-edge digital experiences
             </p>
-            <button className="bg-[#DAED1A] px-5 py-4 flex items-center gap-2 rounded-md hover:bg-[#dae766] transition duration-300 shadow-md hover:text-gray-700">
+            <button onClick={handleDownload} className="bg-[#DAED1A] px-5 py-4 flex items-center gap-2 rounded-md hover:bg-[#dae766] transition duration-300 shadow-md hover:text-gray-700">
               Download Resume <FaDownload />
             </button>
           </motion.div>
