@@ -2,8 +2,9 @@ import React from "react";
 import Container from "../../../components/Container/Container";
 import { FaDownload } from "react-icons/fa";
 import bannerImage from "../../../assets/banner.jpg";
-import image from "../../../assets/myimage.png"
+import image from "../../../assets/myimage.png";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   const bannerContainerStyle = {
@@ -13,7 +14,11 @@ const Banner = () => {
     <div style={bannerContainerStyle}>
       <Container>
         <div className="grid grid-cols-2 items-center w-full min-h-screen">
-          <div>
+          <motion.div
+            initial={{ x: -1000 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
             <h2 className="text-gray-100 font-bold text-6xl leading-tight">
               Hey, I am <br /> Sourave Halder <br /> React Developer
             </h2>
@@ -24,8 +29,13 @@ const Banner = () => {
             <button className="bg-[#DAED1A] px-5 py-4 flex items-center gap-2 rounded-md hover:bg-[#dae766] transition duration-300 shadow-md hover:text-gray-700">
               Download Resume <FaDownload />
             </button>
-          </div>
-          <div className="relative">
+          </motion.div>
+          <motion.div
+            initial={{ x: 1000 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="relative"
+          >
             <Player
               className="z-10"
               src="/backgroundanimation.json"
@@ -33,7 +43,7 @@ const Banner = () => {
               autoplay
             />
             <img className="absolute top-0 p-24 left-6" src={image} alt="" />
-          </div>
+          </motion.div>
         </div>
       </Container>
     </div>
