@@ -5,6 +5,7 @@ import bannerImage from "../../../assets/banner.jpg";
 import image from "../../../assets/myimage.png";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 const Banner = () => {
   const bannerContainerStyle = {
@@ -19,9 +20,13 @@ const Banner = () => {
   };
 
   return (
-    <div style={bannerContainerStyle} className="bg-no-repeat" id="home">
+    <div
+      style={bannerContainerStyle}
+      className="bg-no-repeat relative"
+      id="home"
+    >
       <Container>
-        <div className="grid md:grid-cols-2 items-center w-full min-h-[calc(100vh-230px)] md:h-screen pt-20 md:pt-0">
+        <div className="grid md:grid-cols-2 items-center w-full min-h-[calc(100vh-230px)] relative md:h-screen pt-20 md:pt-0">
           <motion.div
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
@@ -55,6 +60,29 @@ const Banner = () => {
             />
             <img className="absolute top-0 p-24 left-6" src={image} alt="" />
           </motion.div>
+          <div className="absolute cursor-pointer xs:bottom-10 bottom-10 w-full flex justify-center items-center">
+            <ScrollLink
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1000}
+              to="social"
+            >
+              <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+                <motion.div
+                  animate={{
+                    y: [0, 24, 0],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  }}
+                  className="w-3 h-3 rounded-full bg-gray-300 mb-1"
+                />
+              </div>
+            </ScrollLink>
+          </div>
         </div>
       </Container>
     </div>

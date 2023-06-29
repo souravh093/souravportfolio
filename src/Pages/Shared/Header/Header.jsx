@@ -4,6 +4,8 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
+import logo from '../../../assets/logo.svg';
+
 
 const Header = () => {
   const [showBackground, setShowBackground] = useState(false);
@@ -38,9 +40,10 @@ const Header = () => {
                 offset={-100}
                 duration={1000}
                 to="home"
-                className="uppercase cursor-pointer text-2xl text-gray-100"
+                className="uppercase cursor-pointer flex items-center gap-3 text-2xl text-gray-100"
               >
-                souravehalder.
+                <img width={50} src={logo} alt="logo" />
+                <h2>Sourave.</h2>
               </ScrollLink>
             </div>
 

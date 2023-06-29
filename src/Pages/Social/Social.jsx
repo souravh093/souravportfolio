@@ -19,6 +19,7 @@ const Social = () => {
     <Container>
       <div
         className="my-10 grid grid-cols-1 gap-5 md:flex md:gap-6 justify-between text-gray-200"
+        id="social"
       >
         <motion.div
           whileHover={{ scale: 1.1 }}

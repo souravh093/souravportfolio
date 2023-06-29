@@ -32,39 +32,11 @@ const Contact = () => {
       );
   };
 
-  useEffect(() => {
-    const options = {
-      threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          controls.start({ x: 0, opacity: 1 });
-        }
-      });
-    }, options);
-
-    if (projectRef.current) {
-      observer.observe(projectRef.current);
-    }
-
-    return () => {
-      if (projectRef.current) {
-        observer.unobserve(projectRef.current);
-      }
-    };
-  }, [controls]);
-
   return (
     <div id="contact">
       <Container>
         <div>
-          <motion.div
-            ref={projectRef}
-            initial={{ x: -200, opacity: 0 }}
-            animate={controls}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-gray-200 text-center"
           >
             <h2 className="text-gray-100 text-3xl md:text-5xl font-bold mb-5">
@@ -74,7 +46,7 @@ const Contact = () => {
               Enhancing User Experiences with Innovative Web Development. Get in
               Touch!
             </p>
-          </motion.div>
+          </div>
           <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
             <div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
               <form
