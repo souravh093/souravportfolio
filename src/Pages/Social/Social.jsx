@@ -48,7 +48,7 @@ const Social = () => {
         animate={controls}
         transition={{ duration: 0.5 }}
         ref={cardRef}
-        className="my-10 flex gap-6 justify-between text-gray-200"
+        className="my-10 grid grid-cols-1 gap-5 md:flex md:gap-6 justify-between text-gray-200"
       >
         <motion.div
           whileHover={{ scale: 1.1 }}

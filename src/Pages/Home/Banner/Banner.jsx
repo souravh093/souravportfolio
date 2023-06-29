@@ -20,9 +20,9 @@ const Banner = () => {
 
 
   return (
-    <div style={bannerContainerStyle}>
+    <div style={bannerContainerStyle} className="bg-no-repeat" id="banner">
       <Container>
-        <div className="grid grid-cols-2 items-center w-full min-h-screen">
+        <div className="grid md:grid-cols-2 items-center w-full min-h-[calc(100vh-200px)] md:min-h-screen">
           <motion.div
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
@@ -43,7 +43,7 @@ const Banner = () => {
             initial={{ x: 1000 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="relative"
+            className="relative hidden md:block"
           >
             <Player
               className="z-10"

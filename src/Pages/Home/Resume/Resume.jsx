@@ -12,49 +12,20 @@ import {
 import { SiAdobeillustrator, SiVercel } from "react-icons/si";
 import { BiLogoNetlify } from "react-icons/bi";
 import { TbBrandVscode } from "react-icons/tb";
-import { motion, useAnimation } from "framer-motion";
 
 const Resume = () => {
-  const cardRef = useRef(null);
-  const controls = useAnimation();
-  useEffect(() => {
-    const options = {
-      threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          controls.start({ x: 0, opacity: 1 });
-        }
-      });
-    }, options);
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
-    }
-
-    return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
-      }
-    };
-  }, [controls]);
+  
 
   return (
     <div className="mt-28">
       <Container>
-        <motion.div
-          initial={{ x: -200, opacity: 0 }}
-          animate={controls}
-          transition={{ duration: 0.5 }}
-          ref={cardRef}
+        <div
           className="border border-gray-800 bg-[#091530] px-10 rounded-md py-12"
         >
           <header className="mb-20">
             <h2 className="text-4xl font-semibold text-gray-100">Resume</h2>
           </header>
-          <div className="text-gray-100 grid grid-cols-3 gap-10">
+          <div className="text-gray-100 grid md:grid-cols-3 gap-10">
             <div>
               <div className="flex item-center gap-10">
                 <div>
@@ -109,7 +80,7 @@ const Resume = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-20 text-gray-200 my-20">
+          <div className="grid md:grid-cols-2 gap-20 text-gray-200 my-20">
             <div>
               <h2 className="text-2xl font-semibold">Skills</h2>
               <hr className="my-5" />
@@ -215,7 +186,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </Container>
     </div>
   );

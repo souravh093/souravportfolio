@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "../../../components/Container/Container";
-import { Link } from "react-router-dom";
+import { Link, Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   const [showBackground, setShowBackground] = useState(false);
@@ -32,10 +33,10 @@ const Header = () => {
           <div>
             <ul className="flex gap-10 text-gray-100">
               <li>
-                <Link>Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link>Projects</Link>
+                <Link to="/works">Projects</Link>
               </li>
             </ul>
           </div>

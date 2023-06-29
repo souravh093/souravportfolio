@@ -42,7 +42,7 @@ const Services = () => {
           initial={{ x: -200, opacity: 0 }}
           animate={controls}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-5 gap-5 items-center"
+          className="grid md:grid-cols-5 gap-5 items-center"
         >
           <h2 className="text-gray-100 text-5xl col-span-2 font-bold">
             Expertise Services! Let is Check it out
@@ -56,7 +56,7 @@ const Services = () => {
             process.
           </p>
         </motion.div>
-        <div className="grid grid-cols-3 mt-16 gap-10">
+        <div className="grid md:grid-cols-3 mt-16 gap-10">
           <motion.div
             ref={cardRef}
             initial={{ x: -200, opacity: 0 }}

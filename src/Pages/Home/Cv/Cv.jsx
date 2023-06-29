@@ -16,7 +16,7 @@ const Cv = () => {
       className="bg-black my-28 bg-opacity-70  bg-no-repeat bg-cover bg-center bg-blend-multiply py-10 text-white"
     >
       <Container>
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid md:grid-cols-2 gap-5 items-center">
           <div>
             <h2 className="text-4xl font-semibold leading-snug w-full">
               Ready to embark on a development journey? Get my resume and let's make
