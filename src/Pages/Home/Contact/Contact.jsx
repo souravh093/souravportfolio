@@ -67,7 +67,7 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
             className="text-gray-200 text-center"
           >
-            <h2 className="text-gray-100 text-5xl font-bold mb-5">
+            <h2 className="text-gray-100 text-3xl md:text-5xl font-bold mb-5">
               Contact With Me
             </h2>
             <p>

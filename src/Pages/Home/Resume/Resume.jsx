@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Container from "../../../components/Container/Container";
 import resumeImage from "../../../assets/resume.png";
 import {
@@ -17,7 +17,7 @@ const Resume = () => {
   
 
   return (
-    <div className="mt-28">
+    <div className="mt-28" id="resume">
       <Container>
         <div
           className="border border-gray-800 bg-[#091530] px-10 rounded-md py-12"

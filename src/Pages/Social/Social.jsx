@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { FaFacebookF, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Container from "../../components/Container/Container";
 import { Link } from "react-router-dom";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Social = () => {
   const styles = {
@@ -15,39 +15,9 @@ const Social = () => {
     },
   };
 
-  const cardRef = useRef(null);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    const options = {
-      threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          controls.start({ x: 0, opacity: 1 });
-        }
-      });
-    }, options);
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
-    }
-
-    return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
-      }
-    };
-  }, [controls]);
   return (
     <Container>
-      <motion.div
-        initial={{ x: -200, opacity: 0 }}
-        animate={controls}
-        transition={{ duration: 0.5 }}
-        ref={cardRef}
+      <div
         className="my-10 grid grid-cols-1 gap-5 md:flex md:gap-6 justify-between text-gray-200"
       >
         <motion.div
@@ -113,7 +83,7 @@ const Social = () => {
             <FaFacebookF /> Facebook
           </Link>
         </motion.div>
-      </motion.div>
+      </div>
     </Container>
   );
 };

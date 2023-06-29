@@ -14,28 +14,30 @@ const Banner = () => {
   const handleDownload = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = "/souraveresume .pdf";
-    downloadLink.download = "souraveresume .pdf"; 
+    downloadLink.download = "souraveresume .pdf";
     downloadLink.click();
   };
 
-
   return (
-    <div style={bannerContainerStyle} className="bg-no-repeat" id="banner">
+    <div style={bannerContainerStyle} className="bg-no-repeat" id="home">
       <Container>
-        <div className="grid md:grid-cols-2 items-center w-full min-h-[calc(100vh-200px)] md:min-h-screen">
+        <div className="grid md:grid-cols-2 items-center w-full min-h-[calc(100vh-230px)] md:h-screen pt-20 md:pt-0">
           <motion.div
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <h2 className="text-gray-100 font-bold text-6xl leading-tight">
+            <h2 className="text-gray-100 font-bold text-4xl md:text-6xl leading-tight">
               Hey, I am <br /> Sourave Halder <br /> React Developer
             </h2>
             <p className="text-gray-200 my-5 text-lg font-semibold">
               Unleashing the full potential of the web with React: Crafting
               captivating and cutting-edge digital experiences
             </p>
-            <button onClick={handleDownload} className="bg-[#DAED1A] px-5 py-4 flex items-center gap-2 rounded-md hover:bg-[#dae766] transition duration-300 shadow-md hover:text-gray-700">
+            <button
+              onClick={handleDownload}
+              className="bg-[#DAED1A] px-5 py-4 flex items-center gap-2 rounded-md hover:bg-[#dae766] transition duration-300 shadow-md hover:text-gray-700"
+            >
               Download Resume <FaDownload />
             </button>
           </motion.div>

@@ -36,15 +36,12 @@ const Services = () => {
   }, [controls]);
 
   return (
-    <div className="mt-20">
+    <div className="mt-20" id="services">
       <Container>
-        <motion.div
-          initial={{ x: -200, opacity: 0 }}
-          animate={controls}
-          transition={{ duration: 0.5 }}
+        <div
           className="grid md:grid-cols-5 gap-5 items-center"
         >
-          <h2 className="text-gray-100 text-5xl col-span-2 font-bold">
+          <h2 className="text-gray-100 text-3xl md:text-5xl col-span-2 font-bold">
             Expertise Services! Let is Check it out
           </h2>
 
@@ -55,13 +52,9 @@ const Services = () => {
             backed by expert consulting and support throughout the development
             process.
           </p>
-        </motion.div>
+        </div>
         <div className="grid md:grid-cols-3 mt-16 gap-10">
-          <motion.div
-            ref={cardRef}
-            initial={{ x: -200, opacity: 0 }}
-            animate={controls}
-            transition={{ duration: 0.5 }}
+          <div
           >
             <Tilt className="bg-[#091530] cursor-pointer rounded-md  p-10">
               <div className="bg-[#dbed1a1f] inline-block p-5 rounded-full mb-5">
@@ -78,13 +71,9 @@ const Services = () => {
                 Learn More <BsArrowUpRight />
               </Link>
             </Tilt>
-          </motion.div>
+          </div>
 
-          <motion.div
-            ref={cardRef}
-            initial={{ x: -200, opacity: 0 }}
-            animate={controls}
-            transition={{ duration: 0.5 }}
+          <div
           >
             <Tilt className="bg-[#091530] cursor-pointer rounded-md  p-10">
               <div className="bg-[#dbed1a1f] inline-block p-5 rounded-full mb-5">
@@ -101,13 +90,9 @@ const Services = () => {
                 Learn More <BsArrowUpRight />
               </Link>
             </Tilt>
-          </motion.div>
+          </div>
 
-          <motion.div
-            ref={cardRef}
-            initial={{ x: -200, opacity: 0 }}
-            animate={controls}
-            transition={{ duration: 0.5 }}
+          <div
           >
             <Tilt className="bg-[#091530] cursor-pointer rounded-md  p-10">
               <div className="bg-[#dbed1a1f] inline-block p-5 rounded-full mb-5">
@@ -124,7 +109,7 @@ const Services = () => {
                 Learn More <BsArrowUpRight />
               </Link>
             </Tilt>
-          </motion.div>
+          </div>
         </div>
       </Container>
     </div>

@@ -39,14 +39,10 @@ const Projects = () => {
     <div className="mt-28">
       <Container>
         <div>
-          <motion.div
-            ref={projectRef}
-            initial={{ x: -200, opacity: 0 }}
-            animate={controls}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-gray-200 text-center"
           >
-            <h2 className="text-gray-100 text-5xl font-bold mb-5">
+            <h2 className="text-gray-100 text-3xl md:text-5xl font-bold mb-5">
               Let's Check my Projects
             </h2>
             <p className="max-w-2xl mx-auto text-lg">
@@ -55,7 +51,7 @@ const Projects = () => {
               to creating intuitive user interfaces, my recent projects
               highlight my passion for creating impactful digital experiences.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-3 mt-10 gap-10">
             <motion.div

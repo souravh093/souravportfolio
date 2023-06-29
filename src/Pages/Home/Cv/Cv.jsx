@@ -18,13 +18,13 @@ const Cv = () => {
       <Container>
         <div className="grid md:grid-cols-2 gap-5 items-center">
           <div>
-            <h2 className="text-4xl font-semibold leading-snug w-full">
+            <h2 className="md:text-4xl text-3xl font-semibold md:leading-snug w-full">
               Ready to embark on a development journey? Get my resume and let's make
               it happen!
             </h2>
           </div>
           <div>
-            <h3 className="max-w-lg text-xl mb-5">
+            <h3 className="max-w-lg md:text-xl mb-5">
               I am a Frontend Web Developer. Who are excited about unique ideas
               and help
             </h3>
