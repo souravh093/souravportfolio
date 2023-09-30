@@ -210,14 +210,14 @@ const Works = () => {
               <div className="mt-5 flex gap-20 items-center text-xl ">
                 <div className="flex items-center gap-2">
                   <Link
-                    to="https://github.com/souravh093/assingnment-10-client"
+                    to="https://github.com/souravh093/biomed-clients"
                     target="_blank"
                     className="flex items-center gap-2"
                   >
                     Client <FaGithub />
                   </Link>{" "}
                   <Link
-                    to="https://github.com/souravh093/assignment-10-server"
+                    to="https://github.com/souravh093/biomed-servers"
                     target="_blank"
                     className="flex items-center gap-2"
                   >

@@ -75,14 +75,14 @@ const Projects = () => {
                   <div className="flex justify-between gap-5">
                     <div className="flex items-center gap-2">
                       <Link
-                        to="https://github.com/souravh093/assingnment-10-client"
+                        to="https://github.com/souravh093/biomed-servers"
                         target="_blank"
                         className="flex items-center gap-2"
                       >
                         Client <FaGithub />
                       </Link>{" "}
                       <Link
-                        to="https://github.com/souravh093/assignment-10-server"
+                        to="https://github.com/souravh093/biomed-clients"
                         className="flex items-center gap-2"
                       >
                         Server <FaGithub />
