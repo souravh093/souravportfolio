@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../../components/Container/Container";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
-import project3 from "../../assets/project3.png";
+import project4 from "../../assets/project4.png";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
@@ -93,7 +93,6 @@ const Works = () => {
             </div>
           </div>
 
-
           <div className="grid md:grid-cols-2 items-center gap-10 border p-5 rounded-xl border-gray-700">
             <div className="w-full h-[500px]">
               <img
@@ -161,27 +160,25 @@ const Works = () => {
             </div>
           </div>
 
-
           <div className="grid md:grid-cols-2 items-center gap-10 border p-5 rounded-xl border-gray-700">
             <div className="w-full h-[500px]">
               <img
-                src={project3}
+                src={project4}
                 alt="project3"
                 className="w-full h-full object-cover object-top transition-all duration-[5s] ease-linear hover:object-bottom"
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-5">Shape Route</h2>
+              <h2 className="text-4xl font-bold mb-5">Biomed Team Project</h2>
               <p>
                 {" "}
-                This Chef Recipe project, built with React, React Router Dom,
-                and Firebase, features a responsive navigation bar with login
-                functionality. The web application includes a banner section, a
-                chefs section with six items, and a View Recipes button. Each
-                recipe contains detailed information, such as ingredients and
-                cooking method, along with a favorite button. The home page is
-                fully responsive, and users can register and log in using email
-                and password or through Google and GitHub.
+                This is Full Stack MERN Team project. This project is Evaluation
+                Type so any Instructor create task and any user can apply
+                particular task when he apply then they submitted task then
+                instructor evaluate the task and give some reword also. User and
+                Instructor can communication each other using message and live
+                video conversation as well. This project we use Latest
+                technology like socket.IO, Firestorage and many more.
               </p>
               <div className="mt-5 flex flex-wrap gap-5">
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
@@ -203,7 +200,10 @@ const Works = () => {
                   React Query
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  Axios
+                  Socket.IO
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  Zigocloude
                 </span>
               </div>
 
@@ -236,8 +236,12 @@ const Works = () => {
           </div>
         </div>
       </Container>
-      <Link to="https://github.com/souravh093?tab=repositories" target="_blank" className="flex items-center justify-center mt-10">
-        <motion.div whileHover={{scale: 1.1}}>
+      <Link
+        to="https://github.com/souravh093?tab=repositories"
+        target="_blank"
+        className="flex items-center justify-center mt-10"
+      >
+        <motion.div whileHover={{ scale: 1.1 }}>
           <button className="bg-[#16203B] py-4 px-10 rounded-lg hover:bg-[#1b2647]">
             Show more
           </button>

@@ -14,14 +14,10 @@ import { BiLogoNetlify } from "react-icons/bi";
 import { TbBrandVscode } from "react-icons/tb";
 
 const Resume = () => {
-  
-
   return (
     <div className="mt-28" id="resume">
       <Container>
-        <div
-          className="border border-gray-800 bg-[#091530] px-10 rounded-md py-12"
-        >
+        <div className="border border-gray-800 bg-[#091530] px-10 rounded-md py-12">
           <header className="mb-20">
             <h2 className="text-4xl font-semibold text-gray-100">Resume</h2>
           </header>
@@ -51,7 +47,11 @@ const Resume = () => {
               </div>
             </div>
             <div className="mx-auto">
-              <img className="w-60" src={resumeImage} alt="" />
+              <img
+                className="w-60"
+                src="https://firebasestorage.googleapis.com/v0/b/toy-tree.appspot.com/o/resume.png?alt=media&token=d8eaaa11-384b-49b3-9adf-02e1a2fbe1da&_gl=1*t84l4o*_ga*NzYxODY2MzQ0LjE2ODk5NjcwMDg.*_ga_CW55HF8NVT*MTY5NjA2Nzc2NS41NC4xLjE2OTYwNjc5MjMuNjAuMC4w"
+                alt=""
+              />
             </div>
             <div>
               <div>
@@ -86,7 +86,7 @@ const Resume = () => {
               <hr className="my-5" />
               <div className="flex flex-wrap gap-5">
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  Html
+                  HTML
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
                   CSS
@@ -98,10 +98,22 @@ const Resume = () => {
                   TailwindCSS
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  Matrial UI
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
                   JavaScript
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
                   React
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  NextJS
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  Redux
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  Socket.IO
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
                   Firebase
@@ -111,9 +123,6 @@ const Resume = () => {
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
                   MongoDB
-                </span>
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  NextJS
                 </span>
               </div>
             </div>
@@ -170,19 +179,25 @@ const Resume = () => {
                 <h2>Problem-solving</h2>
               </div>
               <div className="bg-[#16203B] p-5 rounded-md">
+                <h2>Conflict Resolution</h2>
+              </div>
+              <div className="bg-[#16203B] p-5 rounded-md">
                 <h2>Adaptability</h2>
               </div>
               <div className="bg-[#16203B] p-5 rounded-md">
-                <h2>Empathy</h2>
+                <h2>Leadership</h2>
               </div>
               <div className="bg-[#16203B] p-5 rounded-md">
                 <h2>Time Management</h2>
               </div>
               <div className="bg-[#16203B] p-5 rounded-md">
-                <h2>Attention to Detail</h2>
+                <h2>Presentation Skills</h2>
               </div>
               <div className="bg-[#16203B] p-5 rounded-md">
-                <h2>Conflict Resolution</h2>
+                <h2>Cultural Sensitivity</h2>
+              </div>
+              <div className="bg-[#16203B] p-5 rounded-md">
+                <h2>Team Building</h2>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Banner = () => {
   const bannerContainerStyle = {
-    backgroundImage: `url(${bannerImage})`,
+    backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/toy-tree.appspot.com/o/banner.jpg?alt=media&token=5ce929e8-2a78-4da3-8e2f-4c4b97d845bb&_gl=1*1vhbqg4*_ga*NzYxODY2MzQ0LjE2ODk5NjcwMDg.*_ga_CW55HF8NVT*MTY5NjA2Nzc2NS41NC4xLjE2OTYwNjg1NDQuNjAuMC4w)`,
   };
 
   const handleDownload = () => {
@@ -47,7 +47,7 @@ const Banner = () => {
             </button>
           </motion.div>
           <motion.div
-            initial={{ x: 1000 }}
+            initial={{ x: 0 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="relative hidden md:block"
@@ -58,7 +58,12 @@ const Banner = () => {
               loop
               autoplay
             />
-            <img className="absolute top-0 p-24 left-6" src={image} alt="" />
+            <div className="absolute top-5 p-16 left-12">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/toy-tree.appspot.com/o/myimage.png?alt=media&token=ac2d669a-315d-43b8-9bd2-0ed11543e0c8&_gl=1*180sgjn*_ga*NzYxODY2MzQ0LjE2ODk5NjcwMDg.*_ga_CW55HF8NVT*MTY5NjA2Nzc2NS41NC4xLjE2OTYwNjgxOTMuNjAuMC4w"
+                alt="profile photo"
+              />
+            </div>
           </motion.div>
           <div className="absolute cursor-pointer xs:bottom-10 bottom-10 w-full flex justify-center items-center">
             <ScrollLink
