@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../components/Container/Container";
-import resumeImage from "../../../assets/resume.png";
+
 import {
   FaChrome,
   FaElementor,

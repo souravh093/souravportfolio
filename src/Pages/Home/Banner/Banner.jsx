@@ -1,8 +1,6 @@
 import React from "react";
 import Container from "../../../components/Container/Container";
 import { FaDownload } from "react-icons/fa";
-import bannerImage from "../../../assets/banner.jpg";
-import image from "../../../assets/myimage.png";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";

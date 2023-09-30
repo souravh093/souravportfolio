@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../../../components/Container/Container";
-import cv from "../../../assets/cv.jpg";
 import { FaDownload } from "react-icons/fa";
 
 const Cv = () => {

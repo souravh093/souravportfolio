@@ -1,9 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Container from "../Container/Container";
 import { motion, useAnimation } from "framer-motion";
-import project1 from "../../assets/project1.png";
-import project2 from "../../assets/project2.png";
-import project4 from "../../assets/project4.png";
 import { FaGithub } from "react-icons/fa";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
