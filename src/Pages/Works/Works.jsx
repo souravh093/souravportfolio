@@ -83,7 +83,7 @@ const Works = () => {
                   </Link>
                 </div>
                 <Link
-                  to="https://github.com/souravh093/musicmestro-client"
+                  to="https://musicmaestro-2b4f6.web.app/"
                   target="_blank"
                   className="flex items-center gap-2"
                 >
@@ -136,14 +136,14 @@ const Works = () => {
               <div className="mt-5 flex gap-20 items-center text-xl ">
                 <div className="flex items-center gap-2">
                   <Link
-                    to="https://github.com/souravh093/musicmestro-client"
+                    to="https://github.com/souravh093/toy-tree-client"
                     target="_blank"
                     className="flex items-center gap-2"
                   >
                     Client <FaGithub />
                   </Link>{" "}
                   <Link
-                    to="https://github.com/souravh093/musicmestro-server"
+                    to="https://github.com/souravh093/toy-tree-server"
                     target="_blank"
                     className="flex items-center gap-2"
                   >
@@ -151,7 +151,7 @@ const Works = () => {
                   </Link>
                 </div>
                 <Link
-                  to="https://github.com/souravh093/musicmestro-client"
+                  to="https://toy-tree.web.app/"
                   target="_blank"
                   className="flex items-center gap-2"
                 >
@@ -210,14 +210,14 @@ const Works = () => {
               <div className="mt-5 flex gap-20 items-center text-xl ">
                 <div className="flex items-center gap-2">
                   <Link
-                    to="https://github.com/souravh093/musicmestro-client"
+                    to="https://github.com/souravh093/assingnment-10-client"
                     target="_blank"
                     className="flex items-center gap-2"
                   >
                     Client <FaGithub />
                   </Link>{" "}
                   <Link
-                    to="https://github.com/souravh093/musicmestro-server"
+                    to="https://github.com/souravh093/assignment-10-server"
                     target="_blank"
                     className="flex items-center gap-2"
                   >
@@ -225,7 +225,7 @@ const Works = () => {
                   </Link>
                 </div>
                 <Link
-                  to="https://github.com/souravh093/musicmestro-client"
+                  to="https://chip-recipe-client.web.app/"
                   target="_blank"
                   className="flex items-center gap-2"
                 >

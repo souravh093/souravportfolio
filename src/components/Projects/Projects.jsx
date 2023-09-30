@@ -93,7 +93,7 @@ const Projects = () => {
                       </Link>
                     </div>
                     <Link
-                      to="https://github.com/souravh093/musicmestro-client"
+                      to="https://musicmaestro-2b4f6.web.app/"
                       target="_blank"
                       className="flex items-center gap-2"
                     >
