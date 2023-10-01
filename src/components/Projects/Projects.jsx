@@ -89,7 +89,7 @@ const Projects = () => {
                       </Link>
                     </div>
                     <Link
-                      to="https://chip-recipe-client.web.app/"
+                      to="https://biomed-3abc5.web.app/"
                       target="_blank"
                       className="flex items-center gap-2"
                     >

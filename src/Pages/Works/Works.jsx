@@ -23,6 +23,81 @@ const Works = () => {
           <div className="grid md:grid-cols-2 items-center gap-10 border p-5 rounded-xl border-gray-700">
             <div className="w-full h-[500px]">
               <img
+                src={project4}
+                alt="project3"
+                className="w-full h-full object-cover object-top transition-all duration-[5s] ease-linear hover:object-bottom"
+              />
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold mb-5">Biomed Team Project</h2>
+              <p>
+                {" "}
+                This is Full Stack MERN Team project. This project is Evaluation
+                Type so any Instructor create task and any user can apply
+                particular task when he apply then they submitted task then
+                instructor evaluate the task and give some reword also. User and
+                Instructor can communication each other using message and live
+                video conversation as well. This project we use Latest
+                technology like socket.IO, Firestorage and many more.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-5">
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  React
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  React Router
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  Firebase
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  MongoDB
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  JWT
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  React Query
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  Socket.IO
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  Zigocloude
+                </span>
+              </div>
+
+              <div className="mt-5 flex gap-20 items-center text-xl ">
+                <div className="flex items-center gap-2">
+                  <Link
+                    to="https://github.com/souravh093/biomed-clients"
+                    target="_blank"
+                    className="flex items-center gap-2"
+                  >
+                    Client <FaGithub />
+                  </Link>{" "}
+                  <Link
+                    to="https://github.com/souravh093/biomed-servers"
+                    target="_blank"
+                    className="flex items-center gap-2"
+                  >
+                    Server <FaGithub />
+                  </Link>
+                </div>
+                <Link
+                  to="https://biomed-3abc5.web.app/"
+                  target="_blank"
+                  className="flex items-center gap-2"
+                >
+                  Live Demo <BsBoxArrowInUpRight />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 items-center gap-10 border p-5 rounded-xl border-gray-700">
+            <div className="w-full h-[500px]">
+              <img
                 src={project1}
                 alt="project1"
                 className="w-full h-full object-cover object-top transition-all duration-[5s] ease-linear hover:object-bottom"
@@ -151,81 +226,6 @@ const Works = () => {
                 </div>
                 <Link
                   to="https://toy-tree.web.app/"
-                  target="_blank"
-                  className="flex items-center gap-2"
-                >
-                  Live Demo <BsBoxArrowInUpRight />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 items-center gap-10 border p-5 rounded-xl border-gray-700">
-            <div className="w-full h-[500px]">
-              <img
-                src={project4}
-                alt="project3"
-                className="w-full h-full object-cover object-top transition-all duration-[5s] ease-linear hover:object-bottom"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-5">Biomed Team Project</h2>
-              <p>
-                {" "}
-                This is Full Stack MERN Team project. This project is Evaluation
-                Type so any Instructor create task and any user can apply
-                particular task when he apply then they submitted task then
-                instructor evaluate the task and give some reword also. User and
-                Instructor can communication each other using message and live
-                video conversation as well. This project we use Latest
-                technology like socket.IO, Firestorage and many more.
-              </p>
-              <div className="mt-5 flex flex-wrap gap-5">
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  React
-                </span>
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  React Router
-                </span>
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  Firebase
-                </span>
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  MongoDB
-                </span>
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  JWT
-                </span>
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  React Query
-                </span>
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  Socket.IO
-                </span>
-                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  Zigocloude
-                </span>
-              </div>
-
-              <div className="mt-5 flex gap-20 items-center text-xl ">
-                <div className="flex items-center gap-2">
-                  <Link
-                    to="https://github.com/souravh093/biomed-clients"
-                    target="_blank"
-                    className="flex items-center gap-2"
-                  >
-                    Client <FaGithub />
-                  </Link>{" "}
-                  <Link
-                    to="https://github.com/souravh093/biomed-servers"
-                    target="_blank"
-                    className="flex items-center gap-2"
-                  >
-                    Server <FaGithub />
-                  </Link>
-                </div>
-                <Link
-                  to="https://chip-recipe-client.web.app/"
                   target="_blank"
                   className="flex items-center gap-2"
                 >
