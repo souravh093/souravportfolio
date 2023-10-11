@@ -12,8 +12,8 @@ const Banner = () => {
 
   const handleDownload = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "/souraveresume .pdf";
-    downloadLink.download = "souraveresume .pdf";
+    downloadLink.href = "/souraveresume.pdf";
+    downloadLink.download = "souraveresume.pdf";
     downloadLink.click();
   };
 

@@ -155,19 +155,21 @@ const Projects = () => {
               <div className="w-full h-[250px] mb-5">
                 <img
                   className="w-full h-full object-cover rounded-xl object-top transition-all duration-[5s] ease-linear hover:object-bottom"
-                  src="https://firebasestorage.googleapis.com/v0/b/toy-tree.appspot.com/o/project2.png?alt=media&token=c44806b6-24df-4c84-97f1-fc689cc37f09&_gl=1*9osrd8*_ga*NzYxODY2MzQ0LjE2ODk5NjcwMDg.*_ga_CW55HF8NVT*MTY5NjA2Nzc2NS41NC4xLjE2OTYwNjgxMjYuNTUuMC4w"
+                  src="https://firebasestorage.googleapis.com/v0/b/vertex-32ce6.appspot.com/o/Screenshot_38.png?alt=media&token=bc21bcde-ed5a-4deb-8763-092c6bc8f296&_gl=1*1qha4bm*_ga*NzYxODY2MzQ0LjE2ODk5NjcwMDg.*_ga_CW55HF8NVT*MTY5NzA0MjE5MC42OS4xLjE2OTcwNDMyMTUuNi4wLjA."
                   alt="project 2"
                 />
               </div>
               <div className="text-gray-200">
-                <h2 className="text-3xl font-bold mb-3">Toy Tree</h2>
+                <h2 className="text-3xl font-bold mb-3">Vertex</h2>
                 <p className="text-gray-300">
-                  This responsive web app has conditional navigation, private
-                  routes, user authentication with Firebase, and sections for
-                  Banners, Galleries, Categories, Trending Toys, and Top Rated
-                  Toys. Users can explore, search, add, and view their own toys.
-                  The app also includes a Blog page with FAQs. It's a seamless
-                  and secure experience for toy enthusiasts.
+                  Vertex is a full-stack MERN project. It is a blog site where
+                  users can read blogs and also write blogs. The home page shows
+                  the treading and recent blog. Users can search blogs by title.
+                  Users can comment on the blog. Users have to log in to write
+                  blogs and users have a dashboard where user can see his/her
+                  blogs and also can delete their blogs. Users can see how many
+                  people read his/her blog. Users can see how many comments on
+                  his/her blog.
                 </p>
                 <div className="mt-5">
                   <div className="flex justify-between gap-5">

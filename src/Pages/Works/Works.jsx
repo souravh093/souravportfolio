@@ -1,8 +1,5 @@
 import React from "react";
 import Container from "../../components/Container/Container";
-import project1 from "../../assets/project1.png";
-import project2 from "../../assets/project2.png";
-import project4 from "../../assets/project4.png";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
@@ -23,7 +20,7 @@ const Works = () => {
           <div className="grid md:grid-cols-2 items-center gap-10 border p-5 rounded-xl border-gray-700">
             <div className="w-full h-[500px]">
               <img
-                src={project4}
+                src="https://firebasestorage.googleapis.com/v0/b/toy-tree.appspot.com/o/project4.png?alt=media&token=b4d2dc08-ce02-4a7f-8ad5-1e59edbc819a&_gl=1*10jgrh9*_ga*NzYxODY2MzQ0LjE2ODk5NjcwMDg.*_ga_CW55HF8NVT*MTY5NjA2Nzc2NS41NC4xLjE2OTYwNjgwMjMuNjAuMC4w"
                 alt="project3"
                 className="w-full h-full object-cover object-top transition-all duration-[5s] ease-linear hover:object-bottom"
               />
@@ -98,7 +95,7 @@ const Works = () => {
           <div className="grid md:grid-cols-2 items-center gap-10 border p-5 rounded-xl border-gray-700">
             <div className="w-full h-[500px]">
               <img
-                src={project1}
+                src="https://firebasestorage.googleapis.com/v0/b/toy-tree.appspot.com/o/project1.png?alt=media&token=562e87b0-8ea9-4c3c-8a09-3f05c4670a8b&_gl=1*1icusmy*_ga*NzYxODY2MzQ0LjE2ODk5NjcwMDg.*_ga_CW55HF8NVT*MTY5NjA2Nzc2NS41NC4xLjE2OTYwNjgxNjkuMTIuMC4w"
                 alt="project1"
                 className="w-full h-full object-cover object-top transition-all duration-[5s] ease-linear hover:object-bottom"
               />
@@ -171,7 +168,7 @@ const Works = () => {
           <div className="grid md:grid-cols-2 items-center gap-10 border p-5 rounded-xl border-gray-700">
             <div className="w-full h-[500px]">
               <img
-                src={project2}
+                src="https://firebasestorage.googleapis.com/v0/b/vertex-32ce6.appspot.com/o/Screenshot_38.png?alt=media&token=bc21bcde-ed5a-4deb-8763-092c6bc8f296&_gl=1*1qha4bm*_ga*NzYxODY2MzQ0LjE2ODk5NjcwMDg.*_ga_CW55HF8NVT*MTY5NzA0MjE5MC42OS4xLjE2OTcwNDMyMTUuNi4wLjA."
                 alt="project2"
                 className="w-full h-full object-cover object-top transition-all duration-[5s] ease-linear hover:object-bottom"
               />
@@ -179,22 +176,24 @@ const Works = () => {
             <div>
               <h2 className="text-4xl font-bold mb-5">Toy Tree</h2>
               <p>
-                {" "}
-                The web application is a responsive platform that offers
-                conditional navigation, private routes, user authentication via
-                Firebase, and various sections such as Banners, Galleries,
-                Categories, Trending Toys, and Top Rated Toys. Users can explore
-                and search for toys, view their own added toys on the My Toys
-                page, and even add new toys to the application. Additionally,
-                there is a Blog page featuring FAQs. Overall, the application
-                provides a seamless and secure experience for toy enthusiasts.
+                Vertex is a full-stack MERN project. It is a blog site where
+                users can read blogs and also write blogs. The home page shows
+                the treading and recent blog. Users can search blogs by title.
+                Users can comment on the blog. Users have to log in to write
+                blogs and users have a dashboard where user can see his/her
+                blogs and also can delete their blogs. Users can see how many
+                people read his/her blog. Users can see how many comments on
+                his/her blog.
               </p>
               <div className="mt-5 flex flex-wrap gap-5">
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
                   React
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
-                  React Router
+                  Redux
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  RTK Query
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
                   Firebase
@@ -204,6 +203,9 @@ const Works = () => {
                 </span>
                 <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
                   TailwindCSS
+                </span>
+                <span className="bg-[#16203B] rounded-md hover:text-gray-100 transition px-5 py-3 text-lg font-semibold">
+                  Express.js
                 </span>
               </div>
 
